@@ -1,0 +1,13 @@
+Projeyi python dilinde locust kullanarak yazdım.
+n11.com ' un test otomasyonlarına kapalı olduğunu düşünmekteyim bu sebeple kontrol amaçlı olarak
+task içeriğini trendyol.com 'a uyarlayarak da gerçekleştirip denedim.
+Bu yüzden trendyol.com' un yük testi için kodu bulunmaktadır.
+
+
+n11.com --> search_load_test_n11.py
+trendyol --> search_load_test_trendyol.py
+
+projeyi çalıştırmak için ; locust -f .\search_load_test_trendyol.py
+projeyi headless çalıştırmak için ; locust -f .\search_load_test_trendyol.py -u 2 -r 2 -t 10s --headless
+
+locust için ekranlar ; screenshot dosyası altındadır.
